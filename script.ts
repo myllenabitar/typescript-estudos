@@ -1,7 +1,7 @@
-let produto = "Livro";
-let preco =  200;
+//let produto = "Livro";
+//let preco =  200;
 
-const carro = {
+/*const carro = {
     marca: 'Audi',
     portas: 5
 };
@@ -30,4 +30,12 @@ function transformarPreco (produto: {nome: string; preco: string;}) {
 const ProdutoNovo = transformarPreco(nintendo);
 
 document.body.innerText = JSON.stringify(ProdutoNovo);
+ */
+
+function ajuste(texto: string) :string {
+     return texto.trim().toLowerCase();
+}
+
+console.log(ajuste('DeFgJj'));
+
 
