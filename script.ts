@@ -37,7 +37,7 @@ function ajuste(texto: string) :string {
 }
 
 console.log(ajuste('DeFgJj'));
-*/
+
 
 const input = document.querySelector('input');
 
@@ -73,3 +73,16 @@ let pi: number = 'oi';
 
 let nome: string = 3.14;
 let saudacao: string = `Olá, ${nome}!`;
+*/
+let  total: number | string = 0; 
+
+total = "iwiefi"
+
+function isNumber (value: string | number){
+    if (typeof value === 'number'){
+        return true;
+    }
+
+}
+
+console.log(isNumber(200));
