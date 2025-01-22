@@ -67,3 +67,9 @@ function totalMudou(){
 if(input){
     input.addEventListener('keyup', totalMudou);
 }
+
+let soma: number = 0;
+let pi: number = 'oi';
+
+let nome: string = 3.14;
+let saudacao: string = `Olá, ${nome}!`;
