@@ -87,7 +87,7 @@ function isNumber (value: string | number){
 }
 
 console.log(isNumber(200));
-*/
+
 //EXERCICIOS
 // 1 - Crie uma função chamada toNumber OK
 // 2 - A função pode receber number | string OK
@@ -105,4 +105,12 @@ function toNumber(value: string | number){
     } else {
         throw "value deve ser um número ou uma string";
     }
+}
+    console.logo(toNumber(200));
+*/
+
+function preencherDados(dados:{}){
+    document.body.innerHTML = `
+    <div></div>
+    `
 }
