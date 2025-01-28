@@ -89,9 +89,20 @@ function isNumber (value: string | number){
 console.log(isNumber(200));
 */
 //EXERCICIOS
-// 1 - Crie uma função chamada toNumber
-// 2 - A função pode receber number | string
+// 1 - Crie uma função chamada toNumber OK
+// 2 - A função pode receber number | string OK
 // 3 - Se a função receber um número, retorne um número
 // 4 - Se a função receber uma string, retorne um número
 // 5 - Se ela receber algo diferente, retorne um erro. (throw "value deve ser um número ou uma string")
 
+
+function toNumber(value: string | number){
+    if(typeof value === 'number'){
+        return value;
+    }
+    if(typeof value === 'string'){
+        return Number(value);
+    } else {
+        throw "value deve ser um número ou uma string";
+    }
+}
