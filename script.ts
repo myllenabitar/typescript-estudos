@@ -107,7 +107,7 @@ function toNumber(value: string | number){
     }
 }
     console.logo(toNumber(200));
-*/
+
 
 function preencherDados(dados:{
     nome: string;
@@ -134,3 +134,5 @@ preencherDados({
     preço: 2500,
     teclado: false, 
 });
+
+*/
