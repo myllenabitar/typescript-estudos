@@ -109,8 +109,28 @@ function toNumber(value: string | number){
     console.logo(toNumber(200));
 */
 
-function preencherDados(dados:{}){
-    document.body.innerHTML = `
-    <div></div>
-    `
+function preencherDados(dados:{
+    nome: string;
+    preço:number;
+    teclado: boolean;
+}){
+    document.body.innerHTML += `
+    <div>
+        <h2>${dados.nome}</h2>
+        <p>${dados.preço}</p>
+        <p>Inclui teclaodo${dados.teclado ? 'sim' : 'não'}</p>
+    </div>
+    `;
 }
+
+preencherDados({
+    nome:"Computador",
+    preço: 2000,
+    teclado: true, 
+});
+
+preencherDados({
+    nome:"Notebook",
+    preço: 2500,
+    teclado: false, 
+});
