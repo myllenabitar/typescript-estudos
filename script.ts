@@ -136,3 +136,16 @@ preencherDados({
 });
 
 */
+
+// Crie uma função que arredonda um valor passado para cima.
+// A função pode receber string ou number.
+// A função deve retornar o mesmo tipo que ela receber.
+
+function arredondarPracima(value: string | number): string | number {
+    if (typeof value ==='number'){
+        return Math.ceil(value);
+    } else {
+        return Math.ceil(Number(value)).toString();
+    }
+}
+arredondarPracima(3.14);
