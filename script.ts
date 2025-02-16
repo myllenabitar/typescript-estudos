@@ -135,8 +135,7 @@ preencherDados({
     teclado: false, 
 });
 
-*/
-
+// EXERCICIOS
 // Crie uma função que arredonda um valor passado para cima.
 // A função pode receber string ou number.
 // A função deve retornar o mesmo tipo que ela receber.
@@ -149,3 +148,58 @@ function arredondarPracima(value: string | number): string | number {
     }
 }
 arredondarPracima(3.14);
+
+
+
+// EXERCICIOS
+// 1 - Faça um fetch da API: https://api.origamid.dev/json/cursos.json
+// 2 - Defina a interface da API
+// 3 - Crie um Type Guard, que garanta que a API possui nome, horas e tags
+// 4 - Use Type Guards para garantir a Type Safety do código
+// 5 - Preencha os dados da API na tela.
+
+async function puxaDados(url:string) {
+    const response = await fetch(`https://api.origamid.dev/json/cursos.json`);
+    const dadosJson = await response.json();
+}
+    
+// EXERCICIOS
+// 1 - Crie uma interface UserData para o formulário abaixo
+// 2 - Crie uma variável global UserData no window, ela será um objeto qualquer
+// 3 - Adicione um evento de keyup ao formulário
+// 4 - Quando o evento ocorrer adicione a {[id]: value} ao UserData
+// 5 - Salve UserData no localStorage
+// 6 - Crie uma User Type Guard, para verificar se o valor de localStorage é compatível com UserData
+// 7 - Ao refresh da página, preencha os valores de localStorage (caso seja UserData) no formulário e em window.UserData
+
+
+<style>
+  body {
+    font-size: 1.25rem;
+    font-family: sans-serif;
+    margin: 2rem;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  input {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    min-width: 50vw;
+    max-width: 100%;
+  }
+</style>
+
+<form action="" id="form">
+  <label for="nome">Nome</label>
+  <input type="text" id="nome" name="nome" />
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" />
+  <label for="cpf">CPF</label>
+  <input type="text" id="cpf" name="cpf" />
+</form>
+*/

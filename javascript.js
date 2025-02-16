@@ -1,4 +1,4 @@
-const input = document.querySelector('input');
+/*const input = document.querySelector('input');
 
 const total = localStorage.getItem('total');
 input.value = total;
@@ -15,3 +15,4 @@ function totalMudou(){
 }
 
 input.addEventListener('keyup', totalMudou);
+*/
